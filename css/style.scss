@@ -1,0 +1,12 @@
+@mixin color($color) {
+  background-color: $color;
+}
+
+body {
+  background-color: lighten(orange, 30%);
+  height: 300px;
+  width: 300px;
+  p {
+    @include color(orange);
+  }
+}
