@@ -1,19 +1,33 @@
 "use strict";
 
 {
-  const oterScores = [10, 20, 50];
-  const scores = [80, 90, 40, 70, 100, ...oterScores];
+  // const numbers = [1, 4, 7, 8, 10];
+  // // const evenNumbers = numbers.filter((number) => {
+  // //   if (number % 2 === 0) {
+  // //     return true;
+  // //   } else {
+  // //     return false;
+  // //   }
+  // // });
+  // const evenNumbers = numbers.filter((number) => number % 2 === 0);
+  // console.log(evenNumbers);
+  // const prices = [180, 190, 200];
+  // const price1 = prices.map(price => price + 20);
+  // console.log(price1);
+  // // const oterScores = [10, 20, 50];
+  // const scores = [80, 90, 40, 70, 100];
+  // scores.forEach((score, index) => {
+  //   console.log(`Score${index}:${score},`);
+  // });
   // const [a, b, ...oters] = scores;
   // console.log(a);
   // console.log(b);
   // console.log(oters);
   // let x = 30;
   // let y = 70;
-
   // [x, y] = [y, x];
   // console.log(x);
   // console.log(y);
-
   // function sum(a, b, c) {
   //   console.log(a + b + c);
   // }
@@ -31,8 +45,7 @@
   //   console.log(scores[i]);
   //   i++;
   // }
-
-  for (let i = 0; i < scores.length; i++) {
-    console.log(`${i}:${scores[i]}`);
-  }
+  // for (let i = 0; i < scores.length; i++) {
+  //   console.log(`${i}:${scores[i]}`);
+  // }
 }
