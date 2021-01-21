@@ -1,10 +1,16 @@
 body {
   background-color: #ffdb99;
-  height: 300px;
-  width: 300px;
+  height: 4000px;
 }
 
-body p {
-  background-color: orange;
+ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin-top: 70px;
+}
+li + li {
+  margin-left: 20px;
+  background-color: aqua;
 }
 /*# sourceMappingURL=style.css.map */

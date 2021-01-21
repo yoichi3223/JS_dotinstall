@@ -1,7 +1,37 @@
 "use strict";
 
 {
-  console.log(result);
+  const str = "hello";
+  console.log(str.length);
+
+  console.log(str.substring(2, 4));
+  console.log(str[3]);
+
+  // let x = [1, 2];
+  // let y = [...x];
+  // x[0] = 5;
+
+  // console.log(x);
+  // console.log(y);
+
+  // const point = {
+  //   x: 100,
+  //   y: 180,
+  // };
+
+  // const keys = Object.keys(point);
+  // // console.log(keys);
+
+  // keys.forEach((key) => {
+  //   console.log(`key:${key} Value:${point[key]}`);
+  // });
+
+  // const points = [
+  //   { x: 30, y: 20 },
+  //   { x: 30, y: 20 },
+  //   { x: 30, y: 20 },
+  // ];
+  // console.log(points[1].y);
 
   // const oterProps = {
   //   r: 4,
