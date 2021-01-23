@@ -1,11 +1,19 @@
 "use strict";
 
 {
-  const str = "hello";
-  console.log(str.length);
+  const d = [2019, 11, 14];
+  console.log(d.join("/"));
 
-  console.log(str.substring(2, 4));
-  console.log(str[3]);
+  const t = "17:08:24";
+  const [hour, minite, second] = t.split(":");
+  console.log(hour);
+  console.log(minite);
+  console.log(second);
+  // const str = "hello";
+  // console.log(str.length);
+
+  // console.log(str.substring(2, 4));
+  // console.log(str[3]);
 
   // let x = [1, 2];
   // let y = [...x];
