@@ -1,54 +1,85 @@
 "use strict";
 
 {
-  const d = [2019, 11, 14];
-  console.log(d.join("/"));
+  let i = 0;
+  function showTime() {
+    console.log(new Date());
+    // i++;
+    // if (i > 2) {
+    //   clearInterval(intervalid);
+    const timeoutid = setTimeout(showTime, 1000);
+    i++;
+    if (i > 2) {
+      clearTimeout(timeoutid);
+    }
+  }
+  showTime();
 
-  const t = "17:08:24";
-  const [hour, minite, second] = t.split(":");
-  console.log(hour);
-  console.log(minite);
-  console.log(second);
+  // const intervalid = setInterval(showTime, 1000);
+  // alert("hello");
+  // const answer = confirm("削除しますか？");
+  // if (answer) {
+  //   console.log("削除しました");
+  // } else {
+  //   console.log("キャンセルしました");
+  // }
+  // const d = new Date(2021, 10);
+  // d.setHours(10, 20, 30);
+  // d.setDate(31);
+  // d.setDate(d.getDate() + 3);
+  // console.log(d);
+  // const d = new Date();
+  // console.log(d);
+  // console.log(`${d.getMonth() + 1}月 ${d.getDate()}日`);
+  // const scores = [10, 3, 9];
+  // let sum = 0;
+  // scores.forEach((score) => {
+  //   sum += score;
+  // });
+  // const avg = sum / scores.length;
+  // // console.log(sum);
+  // console.log(Math.floor(avg));
+  // console.log(Math.ceil(avg));
+  // console.log(Math.round(avg));
+  // console.log(avg.toFixed(3));
+  // console.log(Math.floor(Math.random() * 6) + 1);
+  // const d = [2019, 11, 14];
+  // console.log(d.join("/"));
+  // const t = "17:08:24";
+  // const [hour, minite, second] = t.split(":");
+  // console.log(hour);
+  // console.log(minite);
+  // console.log(second);
   // const str = "hello";
   // console.log(str.length);
-
   // console.log(str.substring(2, 4));
   // console.log(str[3]);
-
   // let x = [1, 2];
   // let y = [...x];
   // x[0] = 5;
-
   // console.log(x);
   // console.log(y);
-
   // const point = {
   //   x: 100,
   //   y: 180,
   // };
-
   // const keys = Object.keys(point);
   // // console.log(keys);
-
   // keys.forEach((key) => {
   //   console.log(`key:${key} Value:${point[key]}`);
   // });
-
   // const points = [
   //   { x: 30, y: 20 },
   //   { x: 30, y: 20 },
   //   { x: 30, y: 20 },
   // ];
   // console.log(points[1].y);
-
   // const oterProps = {
   //   r: 4,
   //   color: "red",
   // };
-
   // const point = { x: 100, y: 180, ...oterProps };
   // console.log(point);
-
   // const { x, y, ...others } = point;
   // console.log(x);
   // console.log(y);
