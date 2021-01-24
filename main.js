@@ -1,20 +1,43 @@
 "use strict";
 
 {
-  let i = 0;
-  function showTime() {
-    console.log(new Date());
-    // i++;
-    // if (i > 2) {
-    //   clearInterval(intervalid);
-    const timeoutid = setTimeout(showTime, 1000);
-    i++;
-    if (i > 2) {
-      clearTimeout(timeoutid);
-    }
+  const posts = [
+    {
+      text: "JavaScriptの勉強中・・・",
+      likeCount: 0,
+    },
+    {
+      text: "プログラミング楽しい!",
+      likeCount: 0,
+    },
+  ];
+  function show(post) {
+    console.log(`${post.text} - ${post.likeCount}いいね`);
   }
-  showTime();
 
+  show(posts[0]);
+  // const name = 8;
+
+  // try {
+  //   console.log(name.toUpperCase());
+  // } catch (e) {
+  //   console.log(e);
+  // }
+
+  // console.log("Finish");
+  // let i = 0;
+  // function showTime() {
+  //   console.log(new Date());
+  //   // i++;
+  //   // if (i > 2) {
+  //   //   clearInterval(intervalid);
+  //   const timeoutid = setTimeout(showTime, 1000);
+  //   i++;
+  //   if (i > 2) {
+  //     clearTimeout(timeoutid);
+  //   }
+  // }
+  // showTime();
   // const intervalid = setInterval(showTime, 1000);
   // alert("hello");
   // const answer = confirm("削除しますか？");
