@@ -1,21 +1,44 @@
 "use strict";
 
 {
-  const posts = [
-    {
-      text: "JavaScriptの勉強中・・・",
-      likeCount: 0,
-    },
-    {
-      text: "プログラミング楽しい!",
-      likeCount: 0,
-    },
-  ];
-  function show(post) {
-    console.log(`${post.text} - ${post.likeCount}いいね`);
-  }
+  class Post {
+    constructor(text, likeCount) {
+      this.text = text;
+      this.likeCount = likeCount;
+    }
 
-  show(posts[0]);
+    show() {
+      console.log(`${this.text} - ${this.likeCount}いいね`);
+    }
+  }
+  let posts = [
+    new Post("JavaScript楽しい", 7),
+    new Post("プログラミング楽しい", 8),
+  ];
+
+  posts[0].show();
+  posts[1].show();
+  // const posts = [
+  //   {
+  //     text: "JavaScriptの勉強中・・・",
+  //     likeCount: 0,
+  //     show() {
+  //       console.log(`${this.text} - ${this.likeCount}いいね`);
+  //     },
+  //   },
+  //   {
+  //     text: "プログラミング楽しい",
+  //     likeCount: 0,
+  //     show() {
+  //       console.log(`${this.text} - ${this.likeCount}いいね`);
+  //     },
+  //   },
+  // ];
+  // function show(post) {
+  //   console.log(`${post.text} - ${post.likeCount}いいね`);
+  // }
+  posts[0].show();
+  posts[1].show();
   // const name = 8;
 
   // try {
