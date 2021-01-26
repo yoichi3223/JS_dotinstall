@@ -10,12 +10,15 @@
     show() {
       console.log(`${this.text} - ${this.likeCount}いいね`);
     }
+    static showInfo() {
+      console.log("Post class version 1.0");
+    }
   }
   let posts = [
     new Post("JavaScript楽しい", 7),
     new Post("プログラミング楽しい", 8),
   ];
-
+  Post.showInfo();
   posts[0].show();
   posts[1].show();
   // const posts = [
