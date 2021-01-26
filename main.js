@@ -14,13 +14,35 @@
       console.log("Post class version 1.0");
     }
   }
+
+  class SponsoredPost extends Post {
+    constructor(text, sponsor) {
+      super(text);
+      this.sponsor = sponsor;
+    }
+
+    show() {
+      super.show();
+      console.log(`...sponsored ${this.sponsor}`);
+    }
+    like() {
+      this.likeCount += 7;
+      this.show();
+    }
+    static showInfo() {
+      console.log("Post class version 1.0");
+    }
+  }
+
   let posts = [
     new Post("JavaScript楽しい", 7),
     new Post("プログラミング楽しい", 8),
+    new SponsoredPost("3分動画でマスターしよう", "ドットインストール"),
   ];
   Post.showInfo();
   posts[0].show();
   posts[1].show();
+  posts[2].like();
   // const posts = [
   //   {
   //     text: "JavaScriptの勉強中・・・",
