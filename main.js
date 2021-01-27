@@ -1,48 +1,52 @@
 "use strict";
 
 {
-  class Post {
-    constructor(text, likeCount) {
-      this.text = text;
-      this.likeCount = likeCount;
-    }
-
-    show() {
-      console.log(`${this.text} - ${this.likeCount}いいね`);
-    }
-    static showInfo() {
-      console.log("Post class version 1.0");
-    }
+  function update() {
+    document.querySelector("#target").textContent = "これはテスト";
   }
+  setTimeout(update, 3000);
+  // class Post {
+  //   constructor(text, likeCount) {
+  //     this.text = text;
+  //     this.likeCount = likeCount;
+  //   }
 
-  class SponsoredPost extends Post {
-    constructor(text, sponsor) {
-      super(text);
-      this.sponsor = sponsor;
-    }
+  //   show() {
+  //     console.log(`${this.text} - ${this.likeCount}いいね`);
+  //   }
+  //   static showInfo() {
+  //     console.log("Post class version 1.0");
+  //   }
+  // }
 
-    show() {
-      super.show();
-      console.log(`...sponsored ${this.sponsor}`);
-    }
-    like() {
-      this.likeCount += 7;
-      this.show();
-    }
-    static showInfo() {
-      console.log("Post class version 1.0");
-    }
-  }
+  // class SponsoredPost extends Post {
+  //   constructor(text, sponsor) {
+  //     super(text);
+  //     this.sponsor = sponsor;
+  //   }
 
-  let posts = [
-    new Post("JavaScript楽しい", 7),
-    new Post("プログラミング楽しい", 8),
-    new SponsoredPost("3分動画でマスターしよう", "ドットインストール"),
-  ];
-  Post.showInfo();
-  posts[0].show();
-  posts[1].show();
-  posts[2].like();
+  //   show() {
+  //     super.show();
+  //     console.log(`...sponsored ${this.sponsor}`);
+  //   }
+  //   like() {
+  //     this.likeCount += 7;
+  //     this.show();
+  //   }
+  //   static showInfo() {
+  //     console.log("Post class version 1.0");
+  //   }
+  // }
+
+  // let posts = [
+  //   new Post("JavaScript楽しい", 7),
+  //   new Post("プログラミング楽しい", 8),
+  //   new SponsoredPost("3分動画でマスターしよう", "ドットインストール"),
+  // ];
+  // Post.showInfo();
+  // posts[0].show();
+  // posts[1].show();
+  // posts[2].like();
   // const posts = [
   //   {
   //     text: "JavaScriptの勉強中・・・",
