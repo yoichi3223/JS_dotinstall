@@ -1,10 +1,11 @@
 "use strict";
 
 {
-  function update() {
-    document.querySelector("#target").textContent = "これはテスト";
-  }
-  setTimeout(update, 3000);
+  document.querySelector("#target").textContent = "これはテスト";
+  document.querySelectorAll("p").forEach((p, index) => {
+    p.textContent = `${index}番目のpです`;
+  });
+
   // class Post {
   //   constructor(text, likeCount) {
   //     this.text = text;
